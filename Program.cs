@@ -14,3 +14,13 @@ if (array[i].Length<=3)
 m=m+1;
 
  Console.WriteLine($"Длина искомого массива равна: {m}");
+
+string[] arr = new string[m];
+int j=0; 
+for (int i = 0;  i< n; i++)
+if (array[i].Length<=3)
+{
+arr[j] = array[i];
+j++;
+}
+Console.WriteLine($"Искомый массив: [{string.Join(", ", arr)}]");
